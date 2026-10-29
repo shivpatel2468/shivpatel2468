@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="580" height="190" viewBox="0 0 580 190" role="img" aria-labelledby="t">
+  <title id="t">Mobile-Computing-VI: Hands-on Android experiments: Bluetooth, GPS, drawing, graphics primitives, notifications, a DBMS app and more.</title>
+  <defs>
+    <radialGradient id="ledR" cx="50%" cy="45%" r="55%">
+      <stop offset="0" stop-color="#ffe3ea"/><stop offset=".42" stop-color="#ff3f78"/><stop offset="1" stop-color="#b8104a"/>
+    </radialGradient>
+    <radialGradient id="ledG" cx="50%" cy="45%" r="55%">
+      <stop offset="0" stop-color="#fff7d6"/><stop offset=".42" stop-color="#ffcc33"/><stop offset="1" stop-color="#c98a00"/>
+    </radialGradient>
+    <filter id="glow" x="-20%" y="-40%" width="140%" height="180%">
+      <feGaussianBlur stdDeviation="3.2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <linearGradient id="goldleaf" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff1b8"/><stop offset=".22" stop-color="#e2b23b"/>
+      <stop offset=".5" stop-color="#fff4c9"/><stop offset=".74" stop-color="#b9861c"/><stop offset="1" stop-color="#f4d77a"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity=".10"/><stop offset=".35" stop-color="#ffffff" stop-opacity=".02"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="sheen" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0"/><stop offset=".5" stop-color="#ffffff" stop-opacity=".13"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="b" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="40"/></filter>
+    <clipPath id="cc"><rect width="580" height="190" rx="18"/></clipPath>
+  </defs>
+  <style>.mono { font-family: ui-monospace, SFMono-Regular, "Cascadia Code", Menlo, Consolas, monospace; }
+  .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif; }</style>
+  <g clip-path="url(#cc)">
+    <rect width="580" height="190" fill="#fbf8f3"/>
+    <circle cx="540" cy="20" r="90" fill="#ff3f78" opacity="0.128" filter="url(#b)"/>
+    <rect width="580" height="70" fill="url(#glass)"/>
+  </g>
+  <rect x=".5" y=".5" width="579" height="189" rx="18" fill="none" stroke="url(#goldleaf)" stroke-opacity=".6"/>
+  <text x="28" y="40" class="mono" font-size="11.5" letter-spacing="2" fill="#b07d00">◆ REPO · ANDROID LABS</text>
+  <text x="28" y="68" class="sans" font-size="22" font-weight="700" fill="#1b1720">Mobile-Computing-VI</text>
+  <text x="28" y="94" class="sans" font-size="14.5" fill="#5d5766">Hands-on Android experiments: Bluetooth, GPS, drawing,</text><text x="28" y="116" class="sans" font-size="14.5" fill="#5d5766">graphics primitives, notifications, a DBMS app and more.</text>
+  <g><rect x="28.0" y="146" width="59.6" height="24" rx="12" fill="#ffffff" fill-opacity="0.75" stroke="#1b1720" stroke-opacity=".12"/><circle cx="41.0" cy="158" r="4" fill="#b07219"/><text x="50.0" y="162" class="mono" font-size="12" fill="#5d5766">Java</text></g><g><rect x="95.6" y="146" width="74.4" height="24" rx="12" fill="#ffffff" fill-opacity="0.75" stroke="#1b1720" stroke-opacity=".12"/><circle cx="108.6" cy="158" r="4" fill="#A97BFF"/><text x="117.6" y="162" class="mono" font-size="12" fill="#5d5766">Kotlin</text></g><g><rect x="178.0" y="146" width="81.8" height="24" rx="12" fill="#ffffff" fill-opacity="0.75" stroke="#1b1720" stroke-opacity=".12"/><circle cx="191.0" cy="158" r="4" fill="#3ddc84"/><text x="200.0" y="162" class="mono" font-size="12" fill="#5d5766">Android</text></g>
+</svg>

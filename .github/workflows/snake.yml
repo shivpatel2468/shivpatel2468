@@ -1,0 +1,31 @@
+name: Pixel snake
+
+on:
+  schedule:
+    - cron: "17 */12 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [".github/workflows/snake.yml"]
+
+permissions:
+  contents: write
+
+jobs:
+  snake:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/snake-light.svg?color_snake=#ff3f78&color_dots=#efe9df,#ffe2a3,#ffcc33,#ff8fae,#ff3f78
+            dist/snake-dark.svg?palette=github-dark&color_snake=#ffcc33&color_dots=#1d1a24,#5a1630,#9c1f4c,#d92e64,#ff3f78
+      - uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+          commit_message: "Update the pixel snake"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
